@@ -12,8 +12,11 @@ import org.apache.shiro.subject.Subject;
 import org.apache.shiro.util.Factory;
 
 public class TestShiro {
-
+	/*
+	 * main方法
+	 */
 	public static void main(String[] args) {
+		System.out.println("你好");
 		//从ini中读取权限信息构建SecurityManager对象
 		Factory<org.apache.shiro.mgt.SecurityManager> factory = new IniSecurityManagerFactory("classpath:my.ini");  
         org.apache.shiro.mgt.SecurityManager securityManager = (org.apache.shiro.mgt.SecurityManager)factory.getInstance();  
